@@ -4,3 +4,104 @@ html {-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;}
 /*  apply a natural box layout model to all elements  */
 * { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
 
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    padding: .5rem 2vw;
+    align-items: center;
+}
+header h1 {font-size: 1rem; padding-left: .5rem}
+
+main {
+    margin: 1rem 2%;
+
+}
+
+section.who {
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.2rem;
+    padding: .5rem;
+}
+
+section.who p {
+    margin: 0;
+}
+
+section.about {
+    display: flex;
+    background-color: #42b4d3;
+    padding: .5rem;
+}
+section.about p {
+    margin: 0;
+}
+
+section.about ul {
+    margin: 0;
+    padding: 0;
+}
+
+section.about div {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-left: .5rem;
+    width: 100%;
+}
+section.about div ul {
+    background-color: #47c7f0;
+    border-radius: 10px;
+    padding: .5rem;
+    list-style-position: inside;
+    box-shadow: inset 0 0 10px #00f3ff;
+}
+
+h2 {font-size: 1rem;}
+
+.popbox {
+    padding-left: 2vw;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.popbox ul {
+    list-style-type: circle;
+    list-style-position: inside;
+}
+
+.assignments {
+    padding: 1rem 2%;
+}
+.assignments a {
+    display: block;
+    padding: .8rem;
+    margin-bottom: .5rem;
+    border: 1px solid #aaa;
+    background-color: #eee;
+    border-radius: 7px;
+    color: #456;
+    text-decoration: none;
+    background-image: url(../Images/arrow.png);
+    background-repeat: no-repeat;
+    background-size: 12px 12px;
+    background-position: 92% center;
+    transition: background 0.3s ease;
+}
+.assignments a:hover {
+    background-color: #ddd;
+    background-position: 95% center;
+}
+
+footer {
+    padding: 1rem;
+    text-align: center;
+}
